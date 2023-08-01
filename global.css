@@ -1,29 +1,29 @@
 :root {
-    --cor-primaria:#000142;
-    --cor-secundaria:#FFFFFF;
-    --tom-1:#FEDD2E;
-    --tom-2:#11195F;
+    --cor-primaria: #000142;
+    --cor-secundaria: #FFFFFF;
+    --tom-1: #FEDD2E;
+    --tom-2: #11195F;
     --tom-3: #282E60;
     --tom-4: #8F9BF5;
     --tom-5: #040E32;
 
-    --fonte-titulo: 'Poppins' , sans-serif;
-    --fonte-corpo: 'Poppins' , sans-serif;
+    --fonte-titulo: 'Poppins', sans-serif;
+    --fonte-corpo: 'Poppins', sans-serif;
 }
 
 html {
     width: 100vw;
-    overflow-x: hidden ;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 body {
-    width: 100%; 
+    width: 100%;
     max-width: 1024px;
     margin: 0 auto;
     background-color: var(--tom-5);
 }
 
-.escondido{
+.escondido {
     top: -176px;
 }

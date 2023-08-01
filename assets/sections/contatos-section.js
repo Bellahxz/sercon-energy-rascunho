@@ -77,7 +77,7 @@ export class ContatosSection extends LitElement {
       >
 
       <app-quadro>
-        <img src="contato.jpg" alt="Imagem contato">
+        <img src="contato.jpg" alt="Imagem contato" />
       </app-quadro>
 
       <div class="animate__animated" data-toggle-class="animate__fadeIn">

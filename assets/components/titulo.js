@@ -14,11 +14,10 @@ export class Titulo extends LitElement {
         line-height: 100%; /* 48px */
       }
 
-      ::slotted(*){
+      ::slotted(*) {
         font-size: inherit;
         margin: 0;
       }
-
     `,
   ];
 

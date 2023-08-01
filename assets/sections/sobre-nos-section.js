@@ -109,11 +109,7 @@ export class SobreNosSection extends LitElement {
         class="animate__animated animate__slow animate__delay-1s"
         data-toggle-class="animate__slideInRight"
       >
-        <img
-          loading="lazy"
-          src="sobre-nos.jpg"
-          alt="Imagem a Barbearia"
-        />
+        <img loading="lazy" src="sobre-nos.jpg" alt="Imagem a Barbearia" />
       </app-quadro>
       <article
         class="animate__animated animate__slower animate__delay-0.5s"

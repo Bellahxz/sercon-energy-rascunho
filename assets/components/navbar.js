@@ -11,7 +11,7 @@ export class Navbar extends LitElement {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 2rem;
+        padding: 0.8rem;
 
         position: fixed;
         top: 0;
@@ -29,12 +29,13 @@ export class Navbar extends LitElement {
         pointer-events: auto;
       }
 
-      app-logo {
-        background-color: white;
+      img {
+        width: 60px;
+        height:60px;
       }
 
       @media (min-width: 768px) {
-        app-logo {
+        img {
           width: 96px;
           height: 96px;
         }
@@ -44,7 +45,7 @@ export class Navbar extends LitElement {
 
   render() {
     return html`
-      <app-logo></app-logo>
+      <img src="logo-sem-fundo.png" alt="Imagem logo">
 
       <feather-icon icon="menu" @click=${nav.abrir}></feather-icon>
     `;

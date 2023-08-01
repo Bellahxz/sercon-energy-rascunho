@@ -24,7 +24,7 @@ export class Botao extends LitElement {
           --button-background,
           color-mix(in srgb, white 20%, var(--tom-2))
         );
-        box-shadow: 0px 2px 4px 0px #665e57;
+        box-shadow: 0px 2px 4px 0px #040E32;
 
         /*Tipografia*/
         color: var(

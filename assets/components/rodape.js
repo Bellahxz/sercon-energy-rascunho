@@ -10,7 +10,13 @@ export class Rodape extends LitElement {
         color: white;
       }
 
+      img {
+        width: 80px;
+        height: 80px;
+      }
+
       span {
+        font-family: var(--fonte-corpo);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -25,7 +31,7 @@ export class Rodape extends LitElement {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: color-mix(in srgb, black 20%, var(--tom-3));
+        background-color: var(--tom-3);
         padding: 2rem;
       }
 
@@ -34,7 +40,7 @@ export class Rodape extends LitElement {
         flex-direction: column;
         align-items: flex-end;
         gap: 10px;
-        opacity: 0.9 ;
+        opacity: 0.9;
       }
 
       button {
@@ -42,14 +48,8 @@ export class Rodape extends LitElement {
         border: transparent;
       }
 
-      app-logo {
-        width: 4rem;
-        height: 4rem;
-        background-color: white;
-        opacity: 0.9 ;
-      }
-
-      a, button{
+      a,
+      button {
         color: white;
         text-decoration: none;
         font-family: var(--fonte-titulo);
@@ -60,47 +60,54 @@ export class Rodape extends LitElement {
         transition: color 300ms;
       }
 
-      a:hover, button:hover {
+      a:hover,
+      button:hover {
         color: var(--tom-1);
       }
 
-      a:active, button:active {
+      a:active,
+      button:active {
         color: var(--tom-1);
       }
 
-      @media (min-width: 1024px){
-       :host {
-        border-radius: 2rem 2rem 0 0;
-        overflow: hidden;
-       }
-
+      @media (min-width: 1024px) {
+        :host {
+          border-radius: 2rem 2rem 0 0;
+          overflow: hidden;
+        }
       }
     `,
   ];
 
-  rolarContato() {
-    return nav.rolarPara('#contatos')
+  rolarContatos() {
+    return nav.rolarPara("#contatos");
   }
 
   rolarServicos() {
-    return nav.rolarPara('#servicos')
+    return nav.rolarPara("#servicos");
+  }
+
+  rolarSobrenos() {
+    return nav.rolarPara("#sobrenos");
+  }
+
+  rolarHero() {
+    return nav.rolarPara("/");
   }
 
   render() {
     return html`
       <footer>
-        <app-logo></app-logo>
+        <img src="logo1.jpg" alt="logo" />
         <nav>
-          <button @click=${this.rolarContato}>Contato</button>
+          <button @click=${this.rolarContatos}>Contato</button>
           <button @click=${this.rolarServicos}>Serviços</button>
-          <a href="sobre-nos">Sobre nós</a>
-          <a href="/">Home</a>
+          <button @click=${this.rolarSobrenos}>Sobre nós</button>
+          <button><a @click=${nav.fechar} href="/">Home</a></button>
         </nav>
       </footer>
 
-      <span>
-        ©Sercon Energy - Direitos reservados desde 2023
-      </span>
+      <span> ©Sercon Energy - Direitos reservados desde 2023 </span>
     `;
   }
 }

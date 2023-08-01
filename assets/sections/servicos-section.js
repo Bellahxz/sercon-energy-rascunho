@@ -2,7 +2,7 @@ import { LitElement, html, css } from "lit";
 import { animate } from "../styles/animate-style";
 import { section } from "../styles/section-style";
 
-export class ServiçOsSection extends LitElement {
+export class ServicosSection extends LitElement {
   static styles = [
     animate,
     section,
@@ -141,12 +141,18 @@ export class ServiçOsSection extends LitElement {
 
   render() {
     return html`
-      <app-paragrafo class="titulo animate__animated" data-toggle-class="animate__fadeIn">
+      <app-paragrafo
+        class="titulo animate__animated"
+        data-toggle-class="animate__fadeIn"
+      >
         Qualidade e funcionalidade em cada <span>serviço</span>.
       </app-paragrafo>
 
       <section>
-        <app-quadro class="animate__animated" data-toggle-class="animate__fadeInLeft">
+        <app-quadro
+          class="animate__animated"
+          data-toggle-class="animate__fadeInLeft"
+        >
           <swiper-container
             effect="fade"
             loop="true"
@@ -179,7 +185,10 @@ export class ServiçOsSection extends LitElement {
           </swiper-container>
         </app-quadro>
 
-        <aside class="animate__animated animate__delay-1s" data-toggle-class="animate__fadeInLeft">
+        <aside
+          class="animate__animated animate__delay-1s"
+          data-toggle-class="animate__fadeInLeft"
+        >
           <article>
             <app-paragrafo>Serviços</app-paragrafo>
             <app-paragrafo class="descricao">
@@ -198,4 +207,4 @@ export class ServiçOsSection extends LitElement {
     `;
   }
 }
-customElements.define("servicos-section", ServiçOsSection);
+customElements.define("servicos-section", ServicosSection);

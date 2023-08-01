@@ -1,4 +1,4 @@
-import './assets';
+import "./assets";
 import { Router } from "@vaadin/router";
 import { initRouter } from "./assets/router";
 import { animarScrollNavbar } from "./modules/animarScrollNavbar";
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   router = initRouter();
 
   router.ready.then(() => {
-    observarAnimacoes()
+    observarAnimacoes();
   });
 
   navbar = document.querySelector("app-navbar");
@@ -48,6 +48,4 @@ export const nav = {
 /* Navbar dinâmica ao scroll */
 
 //Janela . ao rolar= animarScrollNavbar
-window.onscroll = animarScrollNavbar
-
-
+window.onscroll = animarScrollNavbar;

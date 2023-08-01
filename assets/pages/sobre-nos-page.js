@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit';
 
-export class ABarbeariaPage extends LitElement {
+export class SobreNosPage extends LitElement {
     static styles = [
         css`
             sobre-nos-section {

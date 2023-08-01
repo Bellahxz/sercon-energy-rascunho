@@ -14,7 +14,8 @@ export class HeroSection extends LitElement {
       section {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
         gap: 0.5rem;
       }
 
@@ -58,25 +59,13 @@ export class HeroSection extends LitElement {
           visibility: visible;
         }
         100% {
-          transform: translateZ(0px)
-        }
-      }
-
-      @media (min-width: 768px) {
-        app-logo {
-          width: 220px;
-          height: 220px;
+          transform: translateZ(0px);
         }
       }
 
       @media (min-width: 1024px) {
         app-paragrafo {
           display: none;
-        }
-
-        app-logo {
-          width: 220px;
-          height: 220px;
         }
       }
     `,
@@ -100,36 +89,14 @@ export class HeroSection extends LitElement {
           </h1>
         </app-titulo>
         <app-quadro>
-          <swiper-container
-            loop="true"
-            autoplay="true"
-            disabe-on-interaction="false"
-            speed="5000"
-            effect="coverflow"
-            simulate-touch="false"
-            centered-slides="true"
-            coverflow-effect-rotate="50"
-            coverflow-effect-stretch="0"
-            coverflow-effect-depth="100"
-            coverflow-effect-modifier="1"
-            coverflow-effect-slide-shadows="true"
-          >
-            <swiper-slide>
-              <img src="slider-1.jpg" alt="Imagem slider 1" />
-            </swiper-slide>
-
-            <swiper-slide>
-              <img loading="lazy" src="slider-2.jpg" alt="Imagem slider 2" />
-            </swiper-slide>
-
-            <swiper-slide>
-              <img loading="lazy" src="slider-3.jpg" alt="Imagem slider 3" />
-            </swiper-slide>
-          </swiper-container>
+          <img src="slider-1.jpg" alt="Imagem slider 1" />
         </app-quadro>
       </section>
-      <app-paragrafo class="animate__animated animate__delay-5s" data-toggle-class="animate__fadeIn">
-      Na corrente do sucesso, nós iluminamos o seu caminho!
+      <app-paragrafo
+        class="animate__animated animate__delay-5s"
+        data-toggle-class="animate__fadeIn"
+      >
+        Na corrente do sucesso, nós iluminamos o seu caminho!
       </app-paragrafo>
     `;
   }
