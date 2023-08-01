@@ -2,7 +2,7 @@
   "name": "lit-vite-template",
   "description": "Lit project template using Vite",
   "version": "1.0.0",
-  "author": "pmattheew",
+  "author": "bellahxz",
   "license": "ISC",
   "scripts": {
     "dev": "vite",

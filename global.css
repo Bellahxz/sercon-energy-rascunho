@@ -1,0 +1,29 @@
+:root {
+    --cor-primaria:;
+    --cor-secundaria:;
+    --tom-1:;
+    --tom-2:;
+    --tom-3:;
+    --tom-4:;
+    --tom-5:;
+
+    --fonte-titulo:;
+    --fonte-corpo:;
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: var(--tom-5);
+}
+
+.escondido{
+    top: -176px;
+}
